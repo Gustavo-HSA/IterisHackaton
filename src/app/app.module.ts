@@ -19,9 +19,7 @@ import { RodapeTemplateComponent } from './components/rodape-template/rodape-tem
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { LocaisCardComponent } from './components/locais-card/locais-card.component';
-
-
-
+import { LeisCardComponent } from './components/leis-card/leis-card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +30,8 @@ import { LocaisCardComponent } from './components/locais-card/locais-card.compon
     LeisPageComponent,
     MenuTemplateComponent,
     RodapeTemplateComponent,
-    LocaisCardComponent
+    LocaisCardComponent,
+    LeisCardComponent
   ],
   imports: [
     BrowserModule,
