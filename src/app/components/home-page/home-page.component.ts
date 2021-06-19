@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 ​
 @Component({
-  selector: 'app-sobre-page',
+  selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
-export class SobrePageComponent implements OnInit {
+export class HomePageComponent implements OnInit {
 ​
   public logoUrl = 'https://www.iteris.com.br/Iteris.Site.Cms.Theme/img/logo.svg';
   public titulo = 'SOS Mulheres';

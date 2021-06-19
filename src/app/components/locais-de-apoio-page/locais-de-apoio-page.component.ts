@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { locaisApiModel } from 'src/app/services/locais-api-model';
+import { LocaisApiService } from 'src/app/services/locais-api.service';
 
 @Component({
   selector: 'app-locais-de-apoio-page',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocaisDeApoioPageComponent implements OnInit {
 
-  constructor() { }
+  locaisDeApoio: locaisApiModel[] = [];
+
+  constructor(public locaisApi: LocaisApiService) { }
 
   ngOnInit(): void {
+    this.locaisApi.get().subscribe({
+      next: (retornodaApi: locaisApiModel[]) => {
+        this.locaisDeApoio = retornodaApi
+      }
+    })
   }
 
 }

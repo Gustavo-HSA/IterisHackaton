@@ -1,4 +1,4 @@
-export interface LocaisApiModel {
+  export interface locaisApiModel {
     id: number;
     address: string;
     image: string;
