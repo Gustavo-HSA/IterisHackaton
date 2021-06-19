@@ -16,15 +16,15 @@ const routes: Routes = [
         component: HomePageComponent
       },
       {
-        path:'/leis',
+        path:'leis',
         component: LeisPageComponent
       },
       {
-        path:'/locais-de-apoio',
+        path:'locais-de-apoio',
         component: LocaisDeApoioPageComponent
       },
       {
-        path:'/quem-somos',
+        path:'quem-somos',
         component: QuemSomosPageComponent
       }
     ]
