@@ -1,8 +1,8 @@
 export interface LeisApiModel {
+  data: number;
+  descricao: string;
   id: number;
-  address: string;
-  image: string;
-  owner: string;
-  price: number;
-  type: string;
+  nome: string;
+  site: string;
+  
 }
