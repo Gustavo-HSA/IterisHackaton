@@ -16,7 +16,7 @@ export class LocaisDeApoioPageComponent implements OnInit {
   ngOnInit(): void {
     this.locaisApi.get().subscribe({
       next: (retornodaApi: locaisApiModel[]) => {
-        this.locaisDeApoio = retornodaApi
+        this.locaisDeApoio = retornodaApi;
       }
     })
   }
