@@ -17,6 +17,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RodapeTemplateComponent } from './components/rodape-template/rodape-template.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { LocaisCardComponent } from './components/locais-card/locais-card.component';
+
+
 
 
 @NgModule({
@@ -27,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     LocaisDeApoioPageComponent,
     LeisPageComponent,
     MenuTemplateComponent,
-    RodapeTemplateComponent
+    RodapeTemplateComponent,
+    LocaisCardComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,11 +7,11 @@ import { LeisApiModel } from './leis-api-model';
   providedIn: 'root'
 })
 export class LeisApiService {
- 
+
 ​
   constructor(private http: HttpClient) { }
-  
-  private apiUrl = 'https://it3-klj-default-rtdb.firebaseio.com/leisMulheres.json';
+
+  private apiUrl = 'https://it3-klj-default-rtdb.firebaseio.com/instituicoesMulheres.json';
 ​
    public get(): Observable<LeisApiModel[]> {
     return this.http.get<LeisApiModel[]>(this.apiUrl);
